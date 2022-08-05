@@ -1,0 +1,101 @@
+.right {
+    text-align: right;
+}
+
+.myCard {
+    margin-right: 5px;
+    margin-left: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.description {
+    color: rgb(255, 255, 255);
+}
+
+/* .myCard {
+    margin-right: 5px;
+    margin-left: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} */
+.center {
+    display: block;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.btn {
+    height: 75px;
+    width: 90px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #c4c4c4;
+}
+
+.cardBackground {
+    background-image: linear-gradient(to right, #727272 0%, rgb(203, 203, 203) 100%);
+}
+
+.text3d {
+    position: absolute;
+    top: 50%; 
+    right: 50%;
+    transform: translate(50%,-50%);
+    font-family: verdana;
+    /* font-size: 12em; */
+    font-weight: 700;
+    color: #f5f5f5;
+    text-shadow: 0px 1px 0px #919191,
+        0px 2px 0px #919191,
+        /* 0px 3px 0px #919191, */
+        0px 4px 0px rgba(16,16,16,0.4);
+        /* 0px 4px 0px #919191,
+        0px 5px 0px #919191,
+        0px 6px 0px #919191,
+        0px 7px 0px #919191,
+        0px 8px 0px #919191,
+        0px 9px 0px #919191,
+        10px 10px 1px #919191, */
+    /* 0px 4px 0px rgba(16,16,16,0.4),
+    0px 5px 0px rgba(16,16,16,0.4),
+    0px 6px 0px rgba(16,16,16,0.4),
+    0px 7px 0px rgba(16,16,16,0.4); */
+}
+
+
+.btn3d {
+    margin: 6px;
+    position: relative;
+    top: -6px;
+    border: 0;
+    transition: all 40ms linear;
+    font-weight: bold;
+    
+    /* margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    margin-right: 2px; */
+}
+
+.btn3d:active:focus,
+.btn3d:focus:hover,
+.btn3d:focus {
+    /* -moz-outline-style: none; */
+    outline: medium none;
+}
+
+.btn3d:active,
+.btn3d.active {
+    top: 2px;
+}
+
+
+
+.btn3d.btn-primary {
+    box-shadow: 0 0 0 1px #898989 inset, 0 0 0 2px rgba(0, 0, 0, 0.15) inset, 0 8px 0 0 #3f3f3f, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+    background-color: #686868;
+}
+
+.btn3d.btn-primary:active,
+.btn3d.btn-primary.active {
+    box-shadow: 0 0 0 1px #417fbd inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+    background-color: #4274D7;
+}

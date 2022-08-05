@@ -1,0 +1,36 @@
+<div class="row justify-content-center">
+    <button class="btn btn-primary btn3d" (click)="onToggleView()"><span class="text3d">{{viewButtonText}}</span></button>
+    <button class="btn btn-primary btn3d" (click)="onSort()">
+            <span class="text3d">{{sortButtonText}}</span>
+    </button>
+
+    <button class="btn btn-primary btn3d" (click)="onToggleFilter()">
+        <span class="text3d">{{filterButtonText}}</span></button>
+</div>
+
+<!-- Detail View -->
+<div class="container-fluid" *ngIf="isDetailView">
+    <div *ngFor="let article of articlesList" class="row mt-3 myCard  rounded cardBackground">
+        <div class="col-3 rounded">
+            <img class="center" src={{article.image}} width="40" height="120" alt="" style="margin-top:7px ;">
+        </div>
+        <div class="col-9 right rounded">
+            <h6 class="media-title font-weight-bold"
+                style="font-size: large; color: rgb(60, 255, 0); text-shadow: 2px 2px 5px rgb(0, 0, 0);">
+                {{article.name}}</h6>
+            <h4>{{article.price}} €</h4>
+            <p>{{article.pricePerUnitText}}</p>
+            <h5 style="border: 10px; font-size: larger;">{{article.shortDescription}}</h5>
+        </div>
+    </div>
+</div>
+
+
+<!-- Image View -->
+<div *ngIf="!isDetailView" class="container-fluid mt-3">
+    <div class="row justify-content-center m-2">
+        <div *ngFor="let article of articlesList" class="col mt-2 myCard rounded cardBackground">
+            <img src={{article.image}} width="40" height="120" alt="" class="center">
+        </div>
+    </div>
+</div>
