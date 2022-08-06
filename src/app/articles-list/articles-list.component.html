@@ -1,11 +1,15 @@
 <div class="row justify-content-center">
-    <button class="btn btn-primary btn3d" (click)="onToggleView()"><span class="text3d">{{viewButtonText}}</span></button>
+    <button class="btn btn-primary btn3d" (click)="onToggleView()">
+        <span class="text3d">{{viewButtonText}}</span>
+    </button>
+
     <button class="btn btn-primary btn3d" (click)="onSort()">
-            <span class="text3d">{{sortButtonText}}</span>
+        <span class="text3d">{{sortButtonText}}</span>
     </button>
 
     <button class="btn btn-primary btn3d" (click)="onToggleFilter()">
-        <span class="text3d">{{filterButtonText}}</span></button>
+        <span class="text3d">{{filterButtonText}}</span>
+    </button>
 </div>
 
 <!-- Detail View -->
@@ -28,8 +32,8 @@
 
 <!-- Image View -->
 <div *ngIf="!isDetailView" class="container-fluid mt-3">
-    <div class="row justify-content-center m-2">
-        <div *ngFor="let article of articlesList" class="col mt-2 myCard rounded cardBackground">
+    <div class="row justify-content-center">
+        <div *ngFor="let article of articlesList" class="col-3 mt-2 myCard rounded cardBackground">
             <img src={{article.image}} width="40" height="120" alt="" class="center">
         </div>
     </div>
